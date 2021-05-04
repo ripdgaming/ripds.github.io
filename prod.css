@@ -1,0 +1,772 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Play';
+    scroll-behavior: smooth;
+}
+  
+
+  
+  body
+  
+{
+    background-color: black;
+}
+  
+  a
+{
+    text-decoration: none;
+    color: #eee;
+}
+  
+nav 
+{
+	position: relative;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 0;
+	height:50px;
+	background-color: transparent;
+}
+
+
+.logo img
+
+{
+  position: absolute;
+  width: 25vh;
+  left: 0;
+  margin: 5px;
+}
+  
+  
+  nav .links 
+  
+{
+    float: right;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+  nav .links li 
+  
+{
+    list-style: none;
+}
+  
+  nav .links li a:hover
+  
+{
+    color: rgb(123, 255, 0);
+}
+  
+  nav .links a 
+  
+{
+    display: block;
+    padding: 1.5em;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+  #nav-toggle 
+  
+{
+    position: absolute;
+    top: -100px;
+}
+  nav .icon-burger 
+  
+{
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  nav .icon-burger .line 
+  
+{
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+
+   .text-effect 
+{
+    color: #fff6a9;
+    font-family: "play";
+    font-size: 40px;
+    text-align: center;
+    margin: 10px auto 0;
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+      0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    position: relative;
+    animation: animate 4s ease-in-out infinite;
+}
+  @keyframes animate 
+{
+    20%,
+    24%,
+    55% 
+{
+      color: #111;
+      text-shadow: none;
+  }
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% 
+{
+      color: #fff6a9;
+      text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+        0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  }
+}
+
+.main-container img
+  
+{
+    background-color: transparent;
+    margin-left: 5vh;
+    margin-top: 13vh;
+    margin-bottom: 3vh;
+    height: 198px;
+    width: 300px;
+}
+
+.container-1
+  
+{
+    height: 60vh;
+    width: 150vh;
+    float: right;
+    margin-top: 2%;
+    margin-right: 69px;
+    background-color: rgb(53, 52, 52);
+}
+
+  .container-desc span
+  
+{
+    position: absolute;
+    width: 30vh;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: -7.5vh;
+    margin-left:119vh;
+    background-color: transparent;
+    letter-spacing: 0.5px;
+}
+
+  .container-desc span a
+  
+{
+    text-decoration: none;
+    background-color: transparent;
+    color: #00ffd5;
+}
+
+  .container-desc span :hover
+  
+{
+      color: #ff4800;
+}
+
+  .cn-desc1
+  
+{
+      position: absolute;
+      width: 40vh;
+      margin-top: -43vh;
+      margin-left:60vh;
+}
+
+  .cn-desc1 li
+  
+{
+    list-style: none;
+    background-color:transparent;
+    font-size:15px;
+    color: white;
+    padding-top: 10px;
+}
+
+  .cn-desc1 li::before
+  
+{
+      content: "\➥";
+      margin-right: 1vh;
+      font-size: 20px;
+}
+
+  .ttl
+  
+{
+      font-size: 20px;
+      background-color:transparent;
+      font-weight: bold;
+      color: rgb(123, 255, 0);
+}
+
+
+  /*__________3 Column_________*/
+  .price
+  
+{
+      font-size: 25px;
+      position: absolute;
+      width: 40vh;
+      margin-top: -30vh;
+      margin-left:121vh;
+      color: rgb(255, 255, 255);
+      background-color: transparent;
+}
+
+  .buy
+  
+{   
+      position: absolute;
+      margin-left: 120vh;
+      margin-top: -20vh;
+      padding-left: 4vh;
+      padding-right: 4vh;
+      padding-top: 1.5vh;
+      padding-bottom: 1.5vh;
+      border-style:hidden;
+      font-size: 18px;
+      font-weight: bold;
+      color: rgb(123, 255, 0);
+      transition:all .50s;
+      background-color: #000000;
+}
+  
+  .buy1:hover
+  
+{
+    box-shadow: 3px 3px 5px 0 rgba(72, 255, 0, 0.322);
+    transform:scale(1.1); -webkit-transform:scale(1.1);
+
+}
+
+
+  /*__________________Go to top button__________________________*/
+  
+  #myBtn 
+  
+{
+   font-weight:bold;
+   display: none;
+   position: fixed;
+   bottom: 120px;
+   right: 15px;
+   z-index: 99;
+   font-size: 20px;
+   border-style:outset;
+   outline: none;
+   background-color: #6f00ff;
+   color: white;
+   cursor: pointer;
+   padding: 12px;
+   border-radius: 50%;
+}
+  
+  #myBtn:hover 
+  
+{
+   background-color: rgb(255, 32, 32);
+}
+  
+  
+   /********Footer*********/
+
+.footer-distributed 
+  
+{
+    position: absolute;
+    background-color: #292c2f;
+    height: 100px;
+    margin-top: 50px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    padding: 45px 50px;
+    top: 580vh;
+}
+  
+  .footer-distributed .footer-left
+  
+{
+  position: absolute;
+  margin-top: -6px;
+  font-size: 20px;
+  color: white;
+  background-color:transparent;
+}
+  .footer-distributed .footer-right 
+  
+{
+  float: right;
+  margin-top: -12px;
+  max-width: 280px;
+  margin-right: 50px;
+  background-color: transparent;
+}
+  
+  .footer-distributed .footer-right a 
+{
+  display: inline-block;
+  width: 40px;
+  height:40px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 40px;
+  margin-left: 3px;
+  transition:all .25s;
+  
+}
+  
+  .footer-distributed .footer-right a:hover
+  
+{
+  transform:scale(1.1); -webkit-transform:scale(1.1);
+}
+
+
+
+    /* On smaller screens, decrease text size */
+
+    @media screen and (max-width: 700px)
+{
+    
+      .logo img
+      
+{
+        position: absolute;
+        width: 20vh;
+        left: 0;
+        margin: 10px;
+    }
+      nav .links 
+{
+        float: none;
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        right: 30px;
+        top: 60px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content:flex-start;
+        background-color: rgb(0, 0, 0);
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: all .5s ease-in-out;
+        text-align: center;
+    }
+    
+      nav .links a 
+      
+{
+        font-size: 20px;
+    }
+    
+      nav .links li a:hover
+      
+{
+        color:rgb(123, 255, 0);
+    }
+    
+      nav :checked ~ .links 
+{
+        bottom: 0;
+    }
+      nav .icon-burger 
+{
+        display: block;
+    }
+      nav :checked ~ .icon-burger .line:nth-child(1) 
+{
+        transform: translateY(10px) rotate(225deg);
+    }
+      nav :checked ~ .icon-burger .line:nth-child(3) 
+{
+        transform: translateY(-10px) rotate(-225deg);
+    }
+      nav :checked ~ .icon-burger .line:nth-child(2) 
+{
+        opacity: 0;
+    }
+
+      .text-effect 
+{
+        font-size: 30px;
+    }
+
+    .title
+    
+{
+      text-align: center;
+      color: red;
+  }
+
+  .main-container img
+    
+{
+      margin-top: 15px;
+      align-items: center;
+      background-color: transparent;
+      height: 150px;
+      width: 250px;
+  }
+  .container-1
+    
+{
+      height: 78vh;
+      width: 42.5vh;
+      margin: 1.9vh;
+  }
+
+    .container-desc span
+    
+{
+      position: absolute;
+      width: 40vh;
+      font-size: 15px;
+      font-weight: bold;
+      margin-top: 33vh;
+      margin-left: 2vh;
+      background-color: transparent;
+      letter-spacing: 0.5px;
+  }
+
+    .container-desc span a
+    
+{
+      text-decoration: none;
+      background-color: transparent;
+      color: #00ffd5;
+  }
+
+  .container-desc span :hover
+  
+{
+    color: #ff4800;
+}
+
+  .cn-desc1
+  
+{
+    position: absolute;
+    width: 37.5vh;
+    margin-top: 0vh;
+    margin-left:10px;
+}
+
+  .cn-desc1 li
+  
+{
+    list-style: none;
+    background-color:transparent;
+    font-size:15px;
+    color: white;
+    padding-top: 10px;
+}
+
+  .cn-desc1 li::before
+  
+{
+    content: "➥";
+    margin-right: 1vh;
+    font-size: 20px;
+}
+
+  .ttl
+  
+{
+    font-size: 17px;
+    background-color: transparent;
+    font-weight: bold;
+    color: rgb(123, 255, 0);
+}
+
+
+  /*__________3 Column_________*/
+  .price
+  
+{
+    font-size: 20px;
+    position: absolute;
+    width: 40vh;
+    margin-top: 40vh;
+    margin-left: 0px;
+    text-align: center;    
+    color: rgb(255, 72, 0);
+    background-color: transparent;
+}
+
+  .buy
+  
+{   
+    position: absolute;
+    margin-left: 5.5vh;
+    margin-top: 45vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    border-style:hidden;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(123, 255, 0);
+    transition:all .50s;
+
+}
+  
+  .buy1:hover
+  
+{
+    box-shadow: 3px 3px 5px  rgba(72, 255, 0, 0.322);
+    transform:scale(1.1); -webkit-transform:scale(1.1);
+}
+
+  /*__________________Go to top button__________________________*/
+
+#myBtn 
+
+{
+  font-weight:bold;
+  display: block;
+  position: fixed;
+  bottom: 27px;
+  right: 20px;
+  z-index: 99;
+  font-size: 20px;
+  border-style:ridge;
+  outline: none;
+  background-color: rgba(123, 255, 0, 0.692);
+  border-color:rgba(123, 255, 0, 0.692) ;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 0%;
+}
+
+#myBtn:hover 
+
+{
+ background-color: rgb(102, 101, 101, 0.692);
+}
+
+
+     /********Footer*********/
+  
+     
+  .footer-distributed 
+  
+{
+    position: absolute;
+    background-color: #292c2f;
+    top:660vh;
+    height: 80px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 10px;
+    color: #ffffff;
+}
+  
+  .footer-distributed .footer-left 
+  
+{
+    float: left;
+    margin-top: 6%;
+    font-size: 11px;
+}
+  .footer-distributed .footer-right 
+  
+{
+    float: right;
+    margin-top: 4.3%;
+    max-width: 180px;
+    margin-right: -2px;
+}
+  
+  
+  .footer-distributed .footer-links .link-1:before 
+{
+    content: none;
+}
+  .footer-distributed .footer-right a 
+  
+{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #33383b;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 25px;
+    margin-left: 3px;
+    transition:all .25s;
+    font-size: 15px;
+}
+  
+  .footer-distributed .footer-right a:hover
+  
+{
+    transform:scale(1.1); -webkit-transform:scale(1.1);
+}
+  
+  .footer-distributed p.footer-links a:hover
+  
+{
+    text-decoration:underline;
+}      
+  
+}
+
+
+  
+    /* Media Queries */
+    
+      /* Mobile Devices - Phones/Tablets */
+    
+    @media only screen and (max-width: 720px) 
+{ 
+     
+      
+      /* MOBILE HEADINGS */
+      
+      h1 
+{
+        font-size: 1.9rem;
+    }
+      
+      h2 
+{
+        font-size: 1rem;
+    }
+      
+      p 
+{
+        font-size: 0.8rem;
+    }
+  
+        
+      #myBtn 
+      
+{
+        font-weight:bold;
+        display: none;
+        position: fixed;
+        bottom: 70px;
+        right: 5px;
+        z-index: 99;
+        font-size: 10px;
+        border-style:solid;
+        outline: none;
+        background-color: #6f00ff;
+        color: white;
+        cursor: pointer;
+        border-radius: 100%;
+    }
+      
+      #myBtn:hover 
+      
+{
+        background-color: rgb(255, 32, 32);
+      
+    }
+      
+/*___________________Footer___________________*/
+ 
+.footer-distributed 
+
+{
+  background-color: #292c2f;
+  height: 80px;
+  margin-top: 5%;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  padding: 10px 10px;
+  color: #ffffff;
+}
+
+.footer-distributed .footer-left 
+
+{
+  float: left;
+  margin-top: 6%;
+  font-size: 11px;
+}
+.footer-distributed .footer-right 
+
+{
+  float: right;
+  margin-top: 4.3%;
+  max-width: 180px;
+  margin-right: -2px;
+}
+
+
+.footer-distributed .footer-links .link-1:before 
+{
+  content: none;
+}
+.footer-distributed .footer-right a 
+
+{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #33383b;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 25px;
+  margin-left: 3px;
+  transition:all .25s;
+  font-size: 15px;
+}
+
+.footer-distributed .footer-right a:hover
+
+{
+  transform:scale(1.1); -webkit-transform:scale(1.1);
+}
+
+.footer-distributed p.footer-links a:hover
+
+{
+  text-decoration:underline;
+}
+  
+      
+ 
+      
+  }
